@@ -10,8 +10,8 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: black;
-            color: white;
+            background-color: dark blue;
+            color: yellow;
             font-size: 24px;
             text-align: center;
             cursor: pointer;
@@ -23,7 +23,8 @@
     
     <script>
         let audio = new Audio("https://files.catbox.moe/4pa0hu.mp3"); // Замени на свою ссылку
-        
+        audio.volume = 1.0; // Громкость на максимум (от 0 до 1)
+
         function playAudio() {
             audio.play();
         }
