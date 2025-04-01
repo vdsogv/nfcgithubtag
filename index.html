@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Включи звук!</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+            color: white;
+            font-size: 24px;
+            text-align: center;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body onclick="playAudio()">
+    Нажми в любом месте, чтобы включить звук!
+    
+    <script>
+        let audio = new Audio("https://files.catbox.moe/abc123.mp3"); // Замени на свою ссылку
+        
+        function playAudio() {
+            audio.play();
+        }
+    </script>
+</body>
+</html>
